@@ -13,8 +13,8 @@ Start IPShifter: Run the tool to begin rotating your IP addresses.
     
 Configure Nuclei: Set Nuclei to use the IPShifter proxy. Add the -proxy option to your Nuclei command.
 
-    nuclei -u http://target-url -proxy socks5://127.0.0.1:8080.
+    nuclei -u http://target-url -proxy socks5://127.0.0.1:9050.
 
 Configure ffuf: Set ffuf to use the IPShifter proxy. Add the -proxy option to your ffuf command.
 
-    ffuf -u http://target-url/FUZZ -x socks5://127.0.0.1:8080
+    ffuf -u http://target-url/FUZZ -x socks5://127.0.0.1:9050
